@@ -4,6 +4,7 @@
 	import Markdown from 'reveal.js/plugin/markdown/markdown';
 	import Highlight from 'reveal.js/plugin/markdown/markdown';
 	import 'reveal.js/dist/reveal.css';
+	import funny1 from './assets/funny-1.png';
 
 	onMount(() => {
 		const slides = new Reveal({
@@ -22,25 +23,19 @@
 		<section>
 			<h1>Progressive Enhancement</h1>
 			<p>2025-12-19</p>
+			<p>
+				<a href="https://progressive.shivan.xyz">Page</a> -
+				<a href="https://github.com/shivan-s/progressive-enhancement">Code</a>
+			</p>
 		</section>
 		<section>
-			<h2>!(What?)</h2>
-			<code>Progressive Enhancement != No Javascript</code>
+			<img style="max-width: 90vw" alt="Screenshot of a funny license" src={funny1} />
+			<a href="https://github.com/zac-garby/carcassonne/blob/master/LICENSE.txt">Source</a>
 		</section>
 		<section>
-			<h2>What?</h2>
-			<blockquote>
-				Progressive enhancement is a design philosophy that provides a baseline of essential content
-				and functionality to as many users as possible, while delivering the best possible
-				experience only to users of the most modern browsers that can run all the required code.
-			</blockquote>
-			<a
-				href="https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement"
-				target="_blank"
-			>
-				MDN Definition of Progressive Enhancemnet
-			</a>
-			<p>Similar to <em>Gradual Degradation</em></p>
+			<h2>Disclaimer</h2>
+			<p>Sharing own opinions</p>
+			<p class="fragment">Might also talk about: Accessibility and Optimistic Updates</p>
 		</section>
 		<section>
 			<h2>Recommended Resources</h2>
@@ -62,33 +57,77 @@
 				</li>
 			</ul>
 		</section>
+		<section>
+			<h2>!(What?)</h2>
+			<code>Progressive Enhancement != No Javascript</code>
+			<p class="fragment">"0kb of Javascript is not a feature"</p>
+		</section>
+		<section>
+			<h2>What?</h2>
+			<blockquote>
+				<strong>Progressive enhancement</strong> is a design philosophy that provides a baseline of essential
+				content and functionality to as many users as possible, while delivering the best possible experience
+				only to users of the most modern browsers that can run all the required code.
+			</blockquote>
+			<a
+				href="https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement"
+				target="_blank"
+			>
+				MDN Definition of Progressive Enhancemnet
+			</a>
+			<p class="fragment">Similar to <em>Gradual Degradation</em></p>
+			<p class="fragment">Product Requirement</p>
+		</section>
+		<section>
+			<h2>Why?</h2>
+			<p><em>Not</em> provide same experience to everyone</p>
+			<p class="fragment">Attempt to make application accessible to most people</p>
+			<p class="fragment">Good principle for most devs</p>
+		</section>
+		<section>
+			<h2>A Worthy Goal</h2>
+			<p class="fragment">Are we able to complete an order without Javascript?</p>
+		</section>
+		<section>
+			<h2>Thanks for Listening & Feedback Welcomed</h2>
+			<p style="text-align: start">What else would you like to know about?</p>
+			<ul>
+				<li>Learning <a href="https://elixir-lang.org/">Elixir</a> (functional paradigm)</li>
+				<li>
+					<em><a href="https://itrevolution.com/product/accelerate/">Accelerate</a></em> - Devops
+				</li>
+				<li>Dev Setups?</li>
+			</ul>
+		</section>
 	</div>
 </div>
 
 <style>
 	:root {
-		--dim-green: hsla(120 100% 30% / 1);
-		--green: hsla(120 100% 50% / 1);
-		--hl-green: hsla(120 100% 65% / 1);
-		--v-hl-green: hsla(120 100% 85% / 1);
-		--f-v-hl-green: hsla(120 100% 85% / 0.6);
-		--text: hsla(120 100% 50% / 1);
-		--navy: hsla(218 94% 7% / 1);
+		--dim-green: hsl(120 100% 30% / 1);
+		--green: hsl(120 100% 50% / 1);
+		--hl-green: hsl(120 100% 65% / 1);
+		--v-hl-green: hsl(120 100% 85% / 1);
+		--f-v-hl-green: hsl(120 100% 85% / 0.6);
+		--text: hsl(120 100% 50% / 1);
+		--navy: hsl(218 94% 7% / 1);
 
 		--background: var(--navy);
-		--text: hsla(120 40% 95% / 1);
+		--text: hsl(120 40% 95% / 1);
+		--font-size: 1.5rem;
 	}
 	div.reveal {
 		background-color: var(--background);
 		color: var(--text);
+		font-size: var(--font-size);
 		& h1 {
 			color: var(--green);
-			font-size: 3rem;
+			font-size: calc(var(--font-size) * 2);
 			text-shadow: 0rem 0rem 1.25rem var(--f-v-hl-green);
 		}
 		& h2 {
 			color: var(--green);
-			font-size: 2.75rem;
+			font-size: calc(var(--font-size) * 2 - 0.25rem);
 		}
 		a {
 			color: var(--dim-green);
