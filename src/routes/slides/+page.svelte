@@ -61,6 +61,7 @@
 			<h2>!(What?)</h2>
 			<code>Progressive Enhancement != No Javascript</code>
 			<p class="fragment">"0kb of Javascript is not a feature"</p>
+			<p class="fragment">Provide all users with the same experience</p>
 		</section>
 		<section>
 			<h2>What?</h2>
@@ -80,9 +81,10 @@
 		</section>
 		<section>
 			<h2>Why?</h2>
-			<p><em>Not</em> provide same experience to everyone</p>
-			<p class="fragment">Attempt to make application accessible to most people</p>
+			<p class="fragment">Attempt to make application accessible to as many people possible</p>
 			<p class="fragment">Good principle for most devs</p>
+			<p class="fragment">Build in this way can make code simple</p>
+			<p class="fragment">Good User Experience</p>
 		</section>
 		<section>
 			<h2>A Worthy Goal</h2>
@@ -97,6 +99,7 @@
 					<em><a href="https://itrevolution.com/product/accelerate/">Accelerate</a></em> - Devops
 				</li>
 				<li>Dev Setups?</li>
+				<li>Books we are reading?</li>
 			</ul>
 		</section>
 	</div>
