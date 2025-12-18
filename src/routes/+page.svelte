@@ -6,4 +6,6 @@
 <ul>
 	<li><a href={resolve('/slides')}>Slides</a></li>
 	<li><a href={resolve('/ex0')}>Example 0</a> - Checkbox</li>
+	<li><a href={resolve('/ex1')}>Example 1</a> - Form action</li>
+	<li><a href={resolve('/ex2')}>Example 2</a> - Optimistic Update</li>
 </ul>

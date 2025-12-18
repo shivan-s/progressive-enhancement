@@ -5,6 +5,7 @@
 	import Highlight from 'reveal.js/plugin/markdown/markdown';
 	import 'reveal.js/dist/reveal.css';
 	import funny1 from './assets/funny-1.png';
+	import { resolve } from '$app/paths';
 
 	onMount(() => {
 		const slides = new Reveal({
@@ -24,13 +25,15 @@
 			<h1>Progressive Enhancement</h1>
 			<p>2025-12-19</p>
 			<p>
-				<a href="https://progressive.shivan.xyz">Page</a> -
-				<a href="https://github.com/shivan-s/progressive-enhancement">Code</a>
+				<a href={resolve('/')} target="_blank">Page</a> -
+				<a href="https://github.com/shivan-s/progressive-enhancement" target="_blank">Code</a>
 			</p>
 		</section>
 		<section>
 			<img style="max-width: 90vw" alt="Screenshot of a funny license" src={funny1} />
-			<a href="https://github.com/zac-garby/carcassonne/blob/master/LICENSE.txt">Source</a>
+			<a href="https://github.com/zac-garby/carcassonne/blob/master/LICENSE.txt" target="_blank"
+				>Source</a
+			>
 		</section>
 		<section>
 			<h2>Disclaimer</h2>
@@ -87,16 +90,33 @@
 			<p class="fragment">Good User Experience</p>
 		</section>
 		<section>
+			<h2>Examples</h2>
+			<a href={resolve('/ex0')} target="_blank">Example 0</a> - Checkbox
+			<a href={resolve('/ex1')} target="_blank">Example 1</a> - Form action
+			<a href={resolve('/ex2')} target="_blank">Example 2</a> - Optimistic Update
+		</section>
+		<section>
 			<h2>A Worthy Goal</h2>
 			<p class="fragment">Are we able to complete an order without Javascript?</p>
+		</section>
+		<section>
+			<h2>Roän's Discovery</h2>
+			<pre><code data-trim data-noescape data-line-numbers class="language-javascript">
+const arr = [1, 2, 3, 4];
+const newArr = arr.toReversed()
+</code></pre>
 		</section>
 		<section>
 			<h2>Thanks for Listening & Feedback Welcomed</h2>
 			<p style="text-align: start">What else would you like to know about?</p>
 			<ul>
-				<li>Learning <a href="https://elixir-lang.org/">Elixir</a> (functional paradigm)</li>
 				<li>
-					<em><a href="https://itrevolution.com/product/accelerate/">Accelerate</a></em> - Devops
+					Learning <a href="https://elixir-lang.org/" target="_blank">Elixir</a> (functional paradigm)
+				</li>
+				<li>
+					<em>
+						<a href="https://itrevolution.com/product/accelerate/" target="_blank"> Accelerate </a>
+					</em> - Devops
 				</li>
 				<li>Dev Setups?</li>
 				<li>Books we are reading?</li>
