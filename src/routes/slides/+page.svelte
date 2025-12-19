@@ -102,6 +102,7 @@
 		<p><a href={resolve('/ex0')} target="_blank">Example 0</a> - Checkbox</p>
 		<p><a href={resolve('/ex1')} target="_blank">Example 1</a> - Form action</p>
 		<p><a href={resolve('/ex2')} target="_blank">Example 2</a> - Optimistic Update</p>
+		<p><a href={resolve('/ex3')} target="_blank">Example 3</a> - Show and Tell</p>
 	</section>
 	<section>
 		<h2>A Worthy Goal</h2>
