@@ -109,10 +109,9 @@
 		<p class="fragment">Are we able to complete an order without Javascript?</p>
 	</section>
 	<section>
-		<h2>Roän's Discovery</h2>
+		<h2>Pause: How does this work?</h2>
 		<pre><code data-trim data-noescape data-line-numbers class="language-javascript">
-const arr = [1, 2, 3, 4];
-const newArr = arr.toReversed()
+const iAmDefined = undefined
 </code></pre>
 	</section>
 	<section>
