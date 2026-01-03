@@ -47,15 +47,15 @@
 		& div {
 			display: flex;
 			gap: 1rem;
-		}
-		& input + p {
-			visibility: hidden;
-			opacity: 0;
-			transition: opacity 0.3s ease-in-out;
-		}
-		& input:checked + p {
-			visibility: visible;
-			opacity: 1;
+			& input + p {
+				visibility: hidden;
+				opacity: 0;
+				transition: opacity 0.3s ease-in-out;
+			}
+			& input:checked + p {
+				visibility: visible;
+				opacity: 1;
+			}
 		}
 	}
 </style>
